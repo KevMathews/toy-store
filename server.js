@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const app = express();
 const PORT = 3000;
-const Store = require("./models/store");
+const Store = require("./models/store")
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 // const path = require("path");
 // const http = require("http");
 
@@ -17,11 +19,12 @@ app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
 
 //  connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect(process.env.MONGO_URI, {
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useUnifiedTopology: true,
+// });
+mongoose.connect("mongodb://localhost:3000/posts", { useNewUrlParser: true, useCreateIndex: true });
 
 mongoose.connection.once("connected", () =>
   console.log("Mongoose is all ready")

@@ -1,0 +1,678 @@
+body {
+  background-image: url("https://i.imgur.com/w6G82k5.jpg");
+  background-position: center top;
+  background-size: 100% cover no-repeat;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+#headerGraphic {
+  margin-bottom: -20px;
+  margin-top: 20px;
+  margin: 0, auto, 0;
+  margin-left: 0, auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+.productCards {
+  background-color: white;
+  width: 280px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 50px 140px 140px 50px;
+  grid-template-rows: 60px 150px 25px 25px 10px;
+  justify-content: center;
+  border-radius: 25px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 45px;
+  margin-bottom: 55px;
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 30px 0px #000 inset;
+  border: rgb(9, 6, 146) solid 10px;
+}
+.shelfImage {
+  width: 370px;
+  height: 130px;
+  transform: translateX(3px);
+}
+.productShelf {
+  transform: translateX(55px);
+  transform: translateY(-82px);
+  grid-column: 1/5;
+  grid-row: 5;
+  display: inline-grid;
+  justify-content: center;
+}
+.plaqueImage {
+  width: 350px;
+  height: 135px;
+}
+.productPlaque {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  display: inline-grid;
+  justify-content: center;
+  transform: translateY(-60px);
+}
+.productName {
+  margin-top: 5px;
+  grid-column: 1 / 5;
+  grid-row: 1;
+  display: inline-grid;
+  justify-content: center;
+  font-size: 29px;
+  text-shadow: -1px 0, 0 1px rgb(9, 6, 146), 1px 0 rgb(9, 6, 146),
+    0 -1px rgb(9, 6, 146), -2px 0 rgb(9, 6, 146) f, 0 2px rgb(9, 6, 146),
+    2px 0 rgb(9, 6, 146), 0 -2px rgb(9, 6, 146), 2px 2px 3px #000;
+  z-index: 0;
+  transform: translateY(-10px);
+  margin-right: 12px;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  letter-spacing: -2.3px;
+}
+.productN {
+  text-decoration: none;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  color: yellow;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #130252;
+}
+.productN:hover {
+  text-decoration: underline;
+}
+.productImages {
+  max-width: 180px;
+  max-height: 150px;
+}
+.productImage {
+  grid-column: 1/5;
+  grid-row: 2;
+  display: inline-grid;
+  justify-content: center;
+}
+.inStock {
+  grid-column: 2;
+  grid-row: 3;
+  display: inline-grid;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  color: yellow;
+  -webkit-text-stroke: 1.5px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #130252;
+  z-index: 10;
+}
+.buyText {
+  font-size: 20px;
+}
+.productBuy {
+  grid-column: 3;
+  grid-row: 3;
+  display: inline-grid;
+  justify-content: center;
+  margin-top: 5px;
+  z-index: 10;
+}
+
+.productEdit {
+  grid-column: 3;
+  grid-row: 4;
+  display: inline-grid;
+  justify-content: center;
+  margin-top: 10px;
+  z-index: 10;
+}
+.productDelete {
+  grid-column: 2;
+  grid-row: 4;
+  display: inline-grid;
+  justify-content: center;
+  margin-top: 10px;
+  z-index: 10;
+}
+.productSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.showSection {
+  display: grid;
+  grid-template-columns: 225px 225px 225px 225px;
+  grid-template-rows: 50px 100px 400px 60px;
+  justify-content: center;
+  margin-top: 48px;
+}
+.showPlaqueDiv {
+  grid-column: 1/5;
+  grid-row: 1;
+  display: inline-grid;
+  justify-content: center;
+  transform: translateY(-35px);
+}
+.showPlaqueImage {
+  width: 600px;
+}
+.showNames {
+  color: yellow;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 43px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  z-index: 0;
+}
+.nameDiv {
+  grid-column: 1/5;
+  grid-row: 2;
+  display: inline-grid;
+  justify-content: center;
+  font-size: 30px;
+  z-index: 1;
+  transform: translateY(-23px);
+}
+.showImage {
+  max-width: 350px;
+  max-height: 350px;
+}
+.imageDiv {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  grid-column: 1/3;
+  grid-row: 3;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px 0px #000 inset;
+  border: rgb(9, 6, 146) solid 10px;
+}
+.descriptionDiv {
+  font-family: Helvetica, Arial;
+  background-color: white;
+  grid-column: 3/5;
+  grid-row: 3;
+  display: inline-grid;
+  align-items: center;
+  font-size: 18px;
+  width: 380px;
+  height: 380px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 0px #000 inset;
+  border: rgb(9, 6, 146) solid 10px;
+  padding: 10px;
+}
+.quantityDiv {
+  margin-top: 10px;
+  grid-column: 1;
+  grid-row: 4;
+  display: inline-grid;
+  align-items: center;
+  margin-top: 20px;
+  color: yellow;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 32px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+}
+.buyDiv {
+  margin-top: 10px;
+  font-size: 22px;
+  grid-column: 2;
+  grid-row: 4;
+  display: inline-grid;
+  align-items: center;
+  margin-top: 20px;
+}
+.homeDiv {
+  margin-top: 10px;
+  font-size: 22px;
+  grid-column: 3;
+  grid-row: 4;
+  display: inline-grid;
+  align-items: center;
+  transform: translateX(15px);
+  margin-top: 20px;
+}
+.editDiv {
+  margin-top: 10px;
+  font-size: 22px;
+  grid-column: 4;
+  grid-row: 4;
+  display: inline-grid;
+  align-items: center;
+  transform: translateX(85px);
+  margin-top: 20px;
+}
+.deleteButton {
+  border: 1px solid maroon;
+  background-color: red;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px pink, inset 0 -5px 15px maroon, 0 2px 1px black;
+  -o-box-shadow: inset 0 1px 3px pink, inset 0 -5px 15px maroon, 0 2px 1px black;
+  -webkit-box-shadow: inset 0 1px 3px pink, inset 0 -5px 15px maroon,
+    0 2px 1px black;
+  -moz-box-shadow: inset 0 1px 3px pink, inset 0 -5px 15px maroon,
+    0 2px 1px black;
+  color: white;
+  text-shadow: 0 1px 1px black;
+  padding: 2px 15px;
+  font-size: 16px;
+}
+.deleteButton:hover {
+  border: 1px solid rgb(143, 37, 111);
+  background-color: rgb(235, 67, 179);
+}
+.buyButton {
+  border: 1px solid darkgreen;
+  background-color: green;
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen,
+    1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen,
+    1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px lightgreen,
+    inset -1px -10px 5px darkgreen, 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen,
+    1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 16px;
+}
+.buyButton:hover {
+  border: 1px solid rgb(24, 146, 24);
+  background-color: rgb(79, 211, 79);
+}
+.buyButton2 {
+  border: 1px solid darkgreen;
+  background-color: green;
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen,
+    1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen,
+    1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px lightgreen,
+    inset -1px -10px 5px darkgreen, 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen,
+    1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 26px;
+}
+.buyButton2:hover {
+  border: 1px solid rgb(24, 146, 24);
+  background-color: rgb(79, 211, 79);
+}
+.soldOutButton {
+  border: 1px solid rgb(98, 98, 98);
+  background-color: rgb(175, 175, 175);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 16px;
+  pointer-events: none;
+  cursor: default;
+}
+.soldOutButton2 {
+  border: 1px solid rgb(98, 98, 98);
+  background-color: rgb(175, 175, 175);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(237, 238, 237),
+    inset -1px -10px 5px rgb(96, 97, 96), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 26px;
+  pointer-events: none;
+  cursor: default;
+}
+.editButton {
+  border: 1px solid rgb(15, 0, 100);
+  background-color: rgb(0, 98, 128);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 16px;
+}
+.editButton:hover {
+  border: 1px solid rgb(43, 55, 172);
+  background-color: rgb(55, 196, 206);
+}
+.editButton2 {
+  border: 1px solid rgb(15, 0, 100);
+  background-color: rgb(0, 98, 128);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 26px;
+}
+.editButton2:hover {
+  border: 1px solid rgb(43, 55, 172);
+  background-color: rgb(55, 196, 206);
+}
+.homeButton {
+  border: 1px solid rgb(119, 102, 3);
+  background-color: rgb(161, 159, 0);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 16px;
+}
+.homeButton:hover {
+  border: 1px solid rgb(223, 190, 4);
+  background-color: rgb(211, 207, 0);
+}
+.homeButton2 {
+  border: 1px solid rgb(119, 102, 3);
+  background-color: rgb(161, 159, 0);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 26px;
+}
+.homeButton2:hover {
+  border: 1px solid rgb(223, 190, 4);
+  background-color: rgb(211, 207, 0);
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  color: yellow;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 32px;
+  -webkit-text-stroke: 2.2px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu {
+  position: absolute;
+  width: 150px;
+  margin: -100px 0 0 -60px;
+  padding: 50px;
+  padding-top: 125px;
+  border: rgb(9, 6, 146) solid 10px;
+  background: #51a3c9;
+  border-radius: 15px;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  color: #f5d600;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 22px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  box-shadow: 0px 0px 20px 0px #000 inset;
+}
+*/ #menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.newDiv {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+.showPlaqueDiv2 {
+  display: grid;
+  place-content: center;
+  transform: translateY(50px);
+  transform: translateX(15px);
+  margin-top: 10px;
+}
+.newPageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  color: #f5d600;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 22px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  transform: translateY(-165px);
+}
+.editPageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  color: yellow;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  transform: translateY(-153px);
+}
+.newPageText3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  color: #f5d600;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 27px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  transform: translateY(-175px);
+}
+.showPlaqueImage2 {
+  width: 600px;
+}
+.newFormDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #f5d600;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 42px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  transform: translateY(-120px);
+}
+
+.inputField {
+  width: 200px;
+  height: 30px;
+  font-size: 23px;
+  color: black;
+  -webkit-text-stroke: 0px rgb(9, 6, 146);
+  text-shadow: 0px 0px 0px #010246;
+  box-shadow: inset 2px 2px 2px 2px rgb(170, 168, 168);
+  background: #fff;
+}
+.createToy {
+  border: 1px solid rgb(119, 102, 3);
+  background-color: rgb(161, 159, 0);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(238, 236, 144),
+    inset -1px -10px 5px rgb(100, 98, 0), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 26px;
+  -webkit-text-stroke: 1px rgb(9, 6, 146);
+  text-shadow: 1px 1px 1px #010246;
+}
+.createToy:hover {
+  border: 1px solid rgb(223, 190, 4);
+  background-color: rgb(211, 207, 0);
+}
+.editButton3 {
+  border: 1px solid rgb(15, 0, 100);
+  background-color: rgb(0, 98, 128);
+  border-radius: 4px;
+  box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -o-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -webkit-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  -moz-box-shadow: inset 1px 6px 12px rgb(144, 219, 238),
+    inset -1px -10px 5px rgb(0, 15, 100), 1px 2px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 26px;
+  -webkit-text-stroke: 1px rgb(9, 6, 146);
+  text-shadow: 1px 1px 1px #010246;
+}
+.editButton3:hover {
+  border: 1px solid rgb(43, 55, 172);
+  background-color: rgb(55, 196, 206);
+}

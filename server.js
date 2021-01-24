@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const app = express();
-const PORT = 5000;
+// const PORT = 5000;
 const Store = require("./models/store")
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, './.env') });
@@ -42,7 +42,7 @@ app.get("/store/main", (req, res) => {
 });
 
 //  Splash
-app.get("/store", (req, res) => {
+app.get("/", (req, res) => {
   res.render("Splash");
 });
 

@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useCreateIndex: true,
   useUnifiedTopology: true,
 });
-// mongoose.connect("mongodb://localhost:3000/posts", { useNewUrlParser: true, useCreateIndex: true });
+
 
 mongoose.connection.once("connected", () =>
   console.log("Mongoose is all ready")

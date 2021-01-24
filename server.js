@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 const Store = require("./models/store")
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, './.env') });
@@ -19,12 +19,12 @@ app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
 
 //  connect to MongoDB
-// mongoose.connect(process.env.MONGO_URI, {
-//   useNewUrlParser: true,
-//   useCreateIndex: true,
-//   useUnifiedTopology: true,
-// });
-mongoose.connect("mongodb://localhost:3000/posts", { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+});
+// mongoose.connect("mongodb://localhost:3000/posts", { useNewUrlParser: true, useCreateIndex: true });
 
 mongoose.connection.once("connected", () =>
   console.log("Mongoose is all ready")
@@ -128,6 +128,7 @@ app.put("/store/:id/buy", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening in on Port: ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Listening in on Port: ${PORT}`);
+// });
+app.listen(process.env.PORT || 5000)

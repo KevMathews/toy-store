@@ -552,13 +552,7 @@ header {
   grid-template-rows: auto;
   grid-template-columns: auto;
 }
-.showPlaqueDiv2 {
-  display: grid;
-  place-content: center;
-  transform: translateY(50px);
-  transform: translateX(15px);
-  margin-top: 10px;
-}
+
 .newPageText {
   display: flex;
   justify-content: center;
@@ -676,16 +670,47 @@ header {
   border: 1px solid rgb(43, 55, 172);
   background-color: rgb(55, 196, 206);
 }
+.aboutPageDiv {
+  display: grid;
+  grid-template-columns: 800;
+  grid-template-rows: 250px 550px;
+  justify-content: center;
+}
+.showPlaqueDiv2 {
+  display: inline-grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row: 1;
+  /* transform: translateY(50px);
+  transform: translateX(250px);
+  margin-top: 10px;
+  z-index: 100; */
+}
+.newPageText3 {
+  display: inline-grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row:1;
+  color: #f5d600;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  font-size: 27px;
+  -webkit-text-stroke: 2px rgb(9, 6, 146);
+  text-shadow: 4px 4px 3px #010246;
+  transform: translateY(5px);
+  
+}
 .fade-in {
     animation: fadeIn ease 5s;
     -webkit-animation: fadeIn ease 5s;
     -moz-animation: fadeIn ease 5s;
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5s;
+    justify-content: center;
     display: grid;
-    grid-template-columns: 1/2;
-    grid-template-rows: 1/2;
-    transform: translateY(-150px);
+    grid-template-rows: 400px 250px;
+    grid-template-columns: 400px 400px;
+    margin-top: -65px;
   }
   
   
@@ -733,73 +758,72 @@ header {
   max-width: 400px;
 
 }.aboutImageDiv {
-  grid-row: 1;
-  grid-column: 1;
   display: inline-grid;
   place-items: center;
-  transform: translateX(350px);
+  grid-column: 1;
+  grid-row: 1;
+  transform: translateY(-40px);
+  transform: translateX(-20px);
+  margin-top: -10px;
   
 }
 .descriptionDiv2 {
-  grid-row: 1;
-  grid-column: 2;
   display: inline-grid;
   place-items: center;
+  grid-column: 2;
+  grid-row: 1;
   width: 350px;
-  height: 350px;
+  height: 330px;
   background-color: rgb(82,166,203);
   border: 8px solid #19397e;
-  transform: translateX(250px);
+  margin-top: 15px;
+  transform: translateY(15px);
+  transform: translateX(5px);
+
 
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 30px 0px #000 inset;
 }
-.contactDiv {
-  grid-row: 2;
-  grid-column: 2;
-  display: inline-grid;
+/* .contactDiv {
+  display: grid;
   place-items: center;
-  margin-top: 20px;
-  width: 800px;
-  height: 50px;
-  font-size: 28px;
-  background-color: rgb(82,166,203);;
-  transform: translateX(-210px);
-  border: 8px solid #19397e; 
-  display: flex;
+  grid-row: 2;
+  grid-column: 1/2;
   justify-content: center;
-  align-items: center;
-  
-  color: yellow;
+  width: 1000px;
+  height: 150px;
+  background-color: rgb(82,166,203);;
+  border: 8px solid #19397e; 
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 30px 0px #000 inset;
+  text-decoration: none;
   font-family: "Gill Sans";
   font-weight: bold;
-  font-size: 28px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
- 
-
-  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 30px 0px #000 inset;
-  
-  
-}
+  color: yellow;
+  font-size: 24px;
+  -webkit-text-stroke: 1px rgb(9, 6, 146);
+  text-shadow: 2px 2px 1.5px #130252;
+} */
 
 .emailText {
   text-decoration: none;
   font-family: "Gill Sans";
   font-weight: bold;
   color: yellow;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #130252;
+  font-size: 24px;
+  -webkit-text-stroke: 1px rgb(9, 6, 146);
+  text-shadow: 2px 2px 1.5px #130252;
 }
-.emailText:hover {
+  .emailText:hover  {
   text-decoration: underline;
+  
 }
 .aboutTitle {
+  padding-top: 5px;
   text-decoration: none;
   font-family: "Gill Sans";
   font-weight: bold;
@@ -812,4 +836,26 @@ header {
   padding: 15px;
   line-height: 22px;
   transform: translateY(-10px);
+}
+.emailIcon {
+  width: 35px;
+  transform: translateY(7px);
+}
+.emailDiv{  
+  display: grid;
+  place-items: center;
+  grid-row: 2;
+  grid-column: 1;
+  transform: translateY(-100px);
+  margin-right: 20px;
+  
+}
+.linkedInDiv{
+  display: grid;
+  place-items: center;
+  grid-row: 2;
+  grid-column: 2;
+  transform: translateX(95px);
+  transform: translateY(-100px);
+  margin-left: 20px;
 }

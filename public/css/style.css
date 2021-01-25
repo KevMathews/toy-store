@@ -84,8 +84,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   color: yellow;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #130252;
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
+  text-shadow: 2px 2px 1.5px #010246;
 }
 .productN:hover {
   text-decoration: underline;
@@ -111,8 +111,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   color: yellow;
-  -webkit-text-stroke: 1.5px rgb(9, 6, 146);
-  text-shadow: 3px 3px 2px #130252;
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
+  text-shadow: 2px 2px 1.5px #010246;
   z-index: 10;
 }
 .buyText {
@@ -173,8 +173,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 43px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
   z-index: 0;
 }
 .nameDiv {
@@ -229,8 +229,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 32px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.4px rgb(9, 6, 146);
+  text-shadow: 2px 2px 1.5px #010246;
 }
 .buyDiv {
   margin-top: 10px;
@@ -462,7 +462,7 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 32px;
-  -webkit-text-stroke: 2.2px rgb(9, 6, 146);
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
   text-shadow: 3px 3px 2px #010246;
   transition: color 0.3s ease;
 }
@@ -562,8 +562,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 22px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.4px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
   transform: translateY(-165px);
 }
 .editPageText {
@@ -575,8 +575,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 18px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
   transform: translateY(-153px);
 }
 .newPageText3 {
@@ -588,8 +588,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 27px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.4px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
   transform: translateY(-175px);
 }
 .showPlaqueImage2 {
@@ -609,15 +609,15 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 42px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
   transform: translateY(-120px);
 }
 
 .inputField {
   width: 200px;
   height: 30px;
-  font-size: 23px;
+  font-size: 16px;
   color: black;
   -webkit-text-stroke: 0px rgb(9, 6, 146);
   text-shadow: 0px 0px 0px #010246;
@@ -675,6 +675,7 @@ header {
   grid-template-columns: 800;
   grid-template-rows: 250px 550px;
   justify-content: center;
+  transform: translateX(18.5px);
 }
 .showPlaqueDiv2 {
   display: inline-grid;
@@ -703,8 +704,8 @@ header {
   font-family: "Gill Sans";
   font-weight: bold;
   font-size: 27px;
-  -webkit-text-stroke: 2px rgb(9, 6, 146);
-  text-shadow: 4px 4px 3px #010246;
+  -webkit-text-stroke: 1.1px rgb(9, 6, 146);
+  text-shadow: 3px 3px 2px #010246;
   transform: translateY(5px);
   
 }

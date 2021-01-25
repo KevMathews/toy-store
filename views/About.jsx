@@ -32,7 +32,7 @@ class About extends React.Component {
                         </div>
                         <div className='linkedInDiv'>
                             <a href="https://www.linkedin.com/in/kevmathews/" className='emailText' >
-                                <img className='emailIcon' src='https://i.imgur.com/oiVHapz.png'></img>LinkedIn: linkedin.com/in/kevmathews</a>
+                                <img className='emailIcon' src='https://i.imgur.com/V3Zgydk.png'></img>LinkedIn: linkedin.com/in/kevmathews</a>
 
 
                         </div>

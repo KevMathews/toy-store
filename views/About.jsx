@@ -18,14 +18,9 @@ class About extends React.Component {
                 <section className='fade-in'>
                     <div className='aboutImageDiv'><img src='https://i.imgur.com/RT1SnJh.gif' className='aboutImage'></img></div>'
             <div className='descriptionDiv2'>
-                        Full Stack Software Engineer:
-                        <ul>
-                            <li>I Need</li>
-                            <li>To Write</li>
-                            <li>Something</li>
-                            <li>Here :)</li>
-                        </ul>
-                        <hr className='hrClass' />
+                        <span className='aboutTitle'>Full Stack Software Engineer:</span>
+                        <span className='aboutDescription'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a web developer with a background in sales and entrepreneurship. As a business owner I learned how to handle and resolve a wide range of issues which now enables me to approach projects with confidence and creativity. I bring my passion for a clean and organized work product into each project, and I love nothing more then working as a team to find the most efficient and elegant solutions to complex problems.</span>
+
 
                     </div>
                     <div className='contactDiv'>

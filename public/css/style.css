@@ -799,3 +799,17 @@ header {
 .emailText:hover {
   text-decoration: underline;
 }
+.aboutTitle {
+  text-decoration: none;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  color: yellow;
+  font-size: 20px;
+  -webkit-text-stroke: 1px rgb(9, 6, 146);
+  text-shadow: 2px 2px 1.5px #130252;
+}
+.aboutDescription {
+  padding: 15px;
+  line-height: 22px;
+  transform: translateY(-10px);
+}

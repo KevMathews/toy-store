@@ -1,11 +1,11 @@
 const React = require("react");
 class Header extends React.Component {
-    render(){
+    render() {
         return (
             <html>
                 <head>
                     <title>GA's Toy Store</title>
-                    <link rel="stylesheet" type="text/css" href="/css/style.css"></link> 
+                    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
                 </head>
                 <nav role="navigation">
                     <div id="menuToggle">
@@ -21,9 +21,10 @@ class Header extends React.Component {
                     </div>
                 </nav>
                 <header>
-                    <img id="headerGraphic" src='https://i.imgur.com/EacIU7g.gif'/>
+                    <a href="/store/main"><img id="headerGraphic" src='https://i.imgur.com/EacIU7g.gif' /></a>
                 </header>
             </html>
-        )}
+        )
+    }
 }
 module.exports = Header;

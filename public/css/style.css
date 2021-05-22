@@ -10,6 +10,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: -40px;
+  
 }
 #headerGraphic {
   margin-bottom: -20px;
@@ -18,6 +19,7 @@ header {
   margin-left: 0, auto;
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222);
+  
 }
 .productCards {
   background-color: white;

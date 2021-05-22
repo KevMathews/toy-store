@@ -5,6 +5,3 @@
 ### Link to my portfolio [kevmathews.com](https://kevmathews.com/) 
 
 <img src='public/img/screen1.jpg'>
-
-
-
